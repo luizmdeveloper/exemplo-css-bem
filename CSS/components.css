@@ -1,0 +1,300 @@
+/*---------------------------/*
+	Plano
+\*---------------------------*/
+
+.plano{
+	position: relative;
+
+	border: 1px solid #95a4a5;
+	padding: 10px;
+}
+
+.plano--mais-vendido::after{
+	position: absolute;
+	top:-10px;
+	left: -10px;
+	padding: 0 10px;
+
+	background: #c20303;
+	color: #fff;
+
+	content: "MAIS POPULAR";
+}
+
+
+.plano__cabecalho {
+	margin: -10px;
+	margin-bottom: 0px;
+
+	background: #95a4a5;
+	color: #fff;
+
+	font-size: 28px;
+	font-weight: normal;	
+	text-align: center;
+
+	line-height: 2.5;
+}
+
+.plano__valor{
+	margin:20px 0;
+
+	font-size: 28px;
+	text-align: center;
+}
+
+.plano__caracteristicas{
+	margin: 20px 0;
+	padding: 0px; 
+
+	list-style: none;
+}
+
+.plano__caracteristicas > li{
+	text-align: center;
+}
+
+.plano__rodape{
+	text-align: center;
+}
+
+
+/*---------------------------/*
+	Plano
+\*---------------------------*/
+
+.botao{
+	display: inline-block;
+	padding: 15px 16px;
+
+	background: #d9d9d9;
+	color: #fff;
+
+	line-height: normal;
+	font-size :14px;
+
+	text-decoration: none;
+}
+
+.botao:hover, .botao:focus{
+	background: #c7c7d1;
+	color: #fff;	
+
+	text-decoration: none;
+}
+
+.botao--assinar{
+	background: #127d00;
+	color: #fff;
+}
+
+.botao--login{
+	background: #127d00;
+	color: #fff;
+}
+
+.botao--login:hover, .botao--login:focus{
+	background: #0e6400;
+
+	text-decoration: none;
+}
+
+.botao--assinar:hover, .botao--assinar:focus{
+	background: #0e6400;
+
+	text-decoration: none;
+}
+
+.botao--principal{
+	border-radius: 10px;
+
+	background: #004b86;
+	color: #fff;
+}
+
+.botao--principal:hover, .botao--principal:focus{
+	background: #003b6a;
+
+	text-decoration: none;
+}
+
+
+
+/*---------------------------/*
+	Chamada
+\*---------------------------*/
+
+.chamada{
+	color: #fff;
+
+	text-align: center;
+	font-size: 16px;
+}
+
+.chamada__titulo{
+	margin: 0px;
+
+	font-size : 54px;
+	line-height: 0.9;
+	text-shadow: 1px 1px #313131;
+}
+
+.chamada__titulo{
+	color: #fff;
+}
+
+.chamada__acao{
+	font-size: 16px;	
+}
+
+@media(min-width: 992px){
+	.chamada__titulo{
+		padding-left: 10%;
+		padding-right: 10%;
+
+		font-size : 76px;
+	}
+}
+
+
+/*---------------------------/*
+	Depoimento
+\*---------------------------*/
+
+.depoimento{
+	font-size: 22px;
+}
+
+@media(min-width: 992px){
+	.depoimento{
+		padding-left: 25%;
+		padding-right: 25%;
+
+		font-size: 28px;
+	}
+}
+
+.depoimento__descricao{
+	position: relative;
+
+	margin: 0px;
+	padding: 0 60px;
+	
+	font-size: 22px;
+	text-align: center;
+}
+
+.depoimento__descricao::before{
+	position: absolute;
+	left: 0;
+	top: -60px;
+
+	color: #ccc;
+
+	font-size: 178px;
+
+	content: "\201C";
+}
+
+.depoimento__autor{
+	text-align: center;
+}
+
+.depoimento__autor-foto{
+	border-radius: 50%;
+	margin-top: 40px;	
+}
+
+.depoimento__autor-nome{
+	margin-top: 10px;
+
+	font-size: 18px;
+}
+
+
+/*---------------------------/*
+	Navegacao
+\*---------------------------*/
+.navegacao{
+	margin: 0px; 
+}
+
+.navegacao__menu{
+	float: right;
+}
+
+/*---------------------------/*
+	Botão nagecação
+\*---------------------------*/
+
+.botao-navegacao{
+	height: 16px;
+	width: 16px;
+	border: 0;
+
+	background: none;
+	background-image: url("../images/button-hamburger.png");
+
+	outline: none;
+}
+
+@media(min-width: 992px){
+	.botao-navegacao{
+		display: none;
+	}
+}
+
+
+/*---------------------------/*
+	Menu
+\*---------------------------*/
+.menu{
+	margin: 0px;
+	padding: 0px; 	
+	
+	font-size: 14px;
+
+	list-style: none;
+}
+
+@media(max-width: 991px){
+	.menu{
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		
+		display: none;
+		width: 200px;
+		padding: 20px;
+		border: 1px solid #eee;
+
+		background-color: #fbfbfb;
+	}
+
+	.menu--exibido{
+		display: block;
+	}	
+
+	.menu__item{
+		display: block;
+
+		line-height: 3em;
+	}
+
+	.menu__item--botao{
+		margin-top: 20px;
+	}	
+
+}
+
+@media(min-width: 992px){
+	.menu__item{
+		display: inline-block;
+		padding-right: 20px;
+	}
+
+	.menu__item:last-of-type{
+		padding-right: 0; 	
+	}	
+}

@@ -1,0 +1,82 @@
+/*---------------------------*\
+	Cabecalho
+\*---------------------------*/
+
+.layout-cabecalho{
+	height: 70px;
+	line-height: 70px;
+	border-bottom: 1px solid #ccc;
+
+	background: #fff;
+}
+
+.layout-cabecalho--home{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+
+.layout-cabecalho img{
+	margin-top: 2px;
+}
+
+
+/*---------------------------*\
+	Plano
+\*---------------------------*/
+
+.layout-planos{
+	padding: 80px 0;
+
+	text-align: center;	
+}
+
+
+@media(max-width: 749px){
+	.layout-planos .row > div:not(.ultima-coluna){
+		margin-bottom: 40px;
+	}
+}
+
+
+/*---------------------------*\
+	Chamada
+\*---------------------------*/
+
+
+.layout-chamada{
+	padding: 80px 0;
+	margin-top: 70px;
+	
+	background: #7ab55c;
+}
+
+
+/*---------------------------*\
+	Depoimento
+\*---------------------------*/
+
+
+.layout-depoimento{
+	padding: 80px 0;
+	
+	background: #e7e7e7;
+}
+
+/*---------------------------*\
+	Rodape
+\*---------------------------*/
+
+
+.layout-rodape{
+	padding: 30px 0px;
+	
+	background: #484848;
+	color: #fff;
+
+	text-align: center;
+}
+
