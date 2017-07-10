@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+
+		<title>MyPilas | Assinar</title>
+		<link rel="stylesheet" type="text/css" href="CSS/bootstrap-grid.min.css">
+		<link rel="stylesheet" type="text/css" href="CSS/base.css">
+		<link rel="stylesheet" type="text/css" href="CSS/layout.css">
+		<link rel="stylesheet" type="text/css" href="CSS/components.css">
+	</head>
+	<body>
+
+		<header class="layout-cabecalho">
+			<div class="container">
+				<nav class="navegacao  navegacao--assinar">
+					<a href="index.html"><img src="images/logo.png" width="100" height="60" alt="Luiz mário"> </a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="layout-assinatura">
+			<div class="container">
+				<form method="POST" action="#">
+					<h1 class="titulo-formulario">Sua assinatura do MyPilas</h1>
+
+					<div class="grupo-entrada">
+						<label for="razao-social" class="grupo-entrada__titulo">Razão social</label>
+						<input class="grupo-entrada__campo" type="text" id="razao-social" required>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+
+							<div class="grupo-entrada">
+								<label for="cnpj" class="grupo-entrada__titulo">CNPJ</label>
+								<input class="grupo-entrada__campo" type="text" id="cnpj" required>
+							</div>
+
+						</div>
+						<div class="col-sm-6">
+
+							<div class="grupo-entrada">
+								<label for="data-nascimento" class="grupo-entrada__titulo">Data fundação</label>
+								<input class="grupo-entrada__campo" type="date" id="data-nascimento" required>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="grupo-entrada">
+						<label for="responsavel" class="grupo-entrada__titulo">Responsável</label>
+						<input class="grupo-entrada__campo" type="text" id="responsavel" required>
+					</div>
+					
+					<div class="grupo-entrada">
+						<label for="email" class="grupo-entrada__titulo">Email</label>
+						<input class="grupo-entrada__campo" type="email" id="email" required>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-6">
+
+							<div class="grupo-entrada">
+								<label for="estado" class="grupo-entrada__titulo">Estado</label>
+								<select class="grupo-entrada__campo" id="estado" required>
+									<option value="">Selecione um estado</option>
+									<option value="PE">Pernambuco</option>
+									<option value="BA">Bahia</option>
+									<option value="CE">Ceará</option>
+								</select>
+							</div>
+
+						</div>
+						<div class="col-sm-6">
+
+							<div class="grupo-entrada">
+								<label for="cidade" class="grupo-entrada__titulo">Cidade</label>
+								<select class="grupo-entrada__campo" id="cidade" required>
+									<option value="">Selecione uma cidade</option>						
+									<option value="1">Salgueiro</option>
+									<option value="2">Petrolina</option>
+									<option value="3">Juazeiro</option>
+									<option value="4">Juazeiro do norte</option>
+								</select>
+							</div>			
+
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="col-sm-6">
+
+							<div class="grupo-entrada">
+								<label for="senha" class="grupo-entrada__titulo">Senha</label>
+								<input class="grupo-entrada__campo" type="password" id="senha" required">
+							</div>
+
+						</div>
+
+						<div class="col-sm-6">
+
+							<div class="grupo-entrada">
+								<label for="confirmacao-senha" class="grupo-entrada__titulo">Confirmação senha</label>
+								<input class="grupo-entrada__campo" type="password" id="confirmacao-senha" required>
+							</div>		
+
+						</div>
+
+					</div>
+
+					<div class="layout-centralizado">
+						<input type="submit" value="Assinar MyPilas" class="botao  botao--assine">
+					</div>
+				</form>
+
+			</div>
+		</main>
+
+
+		<footer class="layout-rodape">
+			<div class="container">
+				<p>&copy; Copyright 2017 | Desenvolvido pelo MyPilas. Todos os direitos reservados</p>
+			</div>
+		</footer>	
+
+	</body>
+</html>
